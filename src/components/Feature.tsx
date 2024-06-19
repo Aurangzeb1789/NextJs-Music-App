@@ -38,7 +38,7 @@ function Feature() {
       <div className="mt-10">
         <div className="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {featuredCourses.map(course =>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center" key={course.id}>
               <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                 <div className="p-4 sm:p-6 flex flex-col   flex-grow text-start h-[180px]">
                   <h2 className="my-2 font-semibold text-[18px] tracking-wider text-[#ffba08] ">{course.title}</h2>
